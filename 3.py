@@ -9,6 +9,4 @@ def factorial(x):
         b = b*a
     return b
 
-for a in range(0, 11):
-    print(factorial(a))
-
+print(factorial(10))

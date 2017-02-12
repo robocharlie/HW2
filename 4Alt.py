@@ -7,14 +7,14 @@
 from random import randint
 from time import sleep
 
-high_roll = False
-roll_number = 0
-while not high_roll:
+current_roll = 0
+roll_num = 0
+while current_roll < 8:
+    sleep(.1)
     num = randint(1, 10)
-    roll_number += 1
+    current_roll = num
+    roll_num += 1
     if num >= 8:
-        print('Roll {} resulted in a value of {}'.format(roll_number, num))
-        high_roll = True
+        print('Roll {} resulted in a value of {}'.format(roll_num, num))
     else:
         print(num)
-    sleep(.1)
