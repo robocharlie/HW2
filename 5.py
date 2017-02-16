@@ -6,13 +6,13 @@
 from random import randint
 
 # initialize list
-mylist = list()
+high_rolls = list()
 
 # roll 25 times, if value is 8 or larger put into list
 for a in range(1, 26):
     roll = randint(1, 10)
     if roll >= 8:
-        mylist.append(roll)
+        high_rolls.append(roll)
 
 # Print the list
-print(mylist)
+print(high_rolls)
